@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water-Fall</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav ul {
+        position: fixed;
+        height: 20vh;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        z-index: 1;
+      }
+      nav ul li {
+        font-size: 40px;
+        color: red;
+      }
+      .bnr {
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bnrChild {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        gap: 10px;
+      }
+
+      .bnr img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      p {
+        text-indent: 25px;
+        color: red;
+        text-align: justify;
+        line-height: 20px;
+      }
+      .bnrChild button {
+        padding: 10px;
+        font-size: 25px;
+        color: yellow;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: transparent;
+      }
+      .emp {
+        height: 20vh;
+        width: 100%;
+      }
+
+      .con {
+        height: fit-content;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: aqua;
+        margin: 15px auto;
+        gap: 10px;
+      }
+      .c1 h1 {
+        color: red;
+        text-transform: uppercase;
+      }
+      .c2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+      }
+      .card {
+        background-color: burlywood;
+        border: 2px solid;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 35%;
+      }
+      .card img {
+        height: 100px;
+        width: 100px;
+      }
+      .card h4 {
+        color: blue;
+      }
+
+      .card button {
+        background-color: transparent;
+        padding: 7px;
+        color: yellow;
+      }
+
+      section {
+        width: 40%;
+        margin: auto;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+      }
+      section img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+      }
+      .stars i {
+        color: yellow;
+      }
+      footer {
+        height: 10vh;
+        background-color: black;
+        color: beige;
+        font-style: italic;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Login</li>
+        <li>Register</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="emp"></div>
+    <div class="bnr">
+      <img src="https://broy-vec.github.io/flex-layout1/one.jpg" alt="abc" />
+      <div class="bnrChild">
+        <h2>xyz waterfall</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+          unde et voluptatum minus eveniet ad aperiam adipisci consequuntur
+          quidem expedita.
+        </p>
+        <button>Know more...</button>
+      </div>
+    </div>
+
+    <div class="con">
+      <div class="c1"><h1>Nearest places to visit</h1></div>
+      <div class="c2">
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+        <div class="card">
+          <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aa" />
+          <h4>Title:Abc</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod iusto pariatur nobis eum.
+          </p>
+          <h4>Distance:10KM</h4>
+          <button>Know More...</button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <img src="https://broy-vec.github.io/flex-layout1/1.jpg" alt="aaa" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eos
+        ullam doloremque distinctio autem quis adipisci! Autem, neque vitae
+        consequuntur, voluptatibus illum facere omnis incidunt earum dolores
+        sint corporis asperiores sequi? Praesentium molestias facilis provident
+        ipsam quo, eos expedita ea nam, vel incidunt enim tenetur consectetur
+        dolor, alias omnis cum.
+      </p>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+    </section>
+
+    <footer>&copy;copyrights to xyz.com</footer>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-Task</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .con {
+        margin: 30px auto;
+        width: 900px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(9, auto);
+        gap: 10px;
+      }
+      .con div {
+        font-size: 30px;
+        transition: all 0.5s linear;
+      }
+      .c1 {
+        grid-column: 1/10;
+        background-color: rgb(196, 106, 15);
+      }
+      .c2 {
+        grid-area: 2/1/7/4;
+        background-color: greenyellow;
+      }
+      .c3 {
+        grid-area: 2/4/4/8;
+        background-color: rgb(114, 140, 234);
+      }
+      .c4 {
+        grid-area: 2/8/6/10;
+        background-color: aquamarine;
+      }
+      .c5 {
+        grid-area: 4/4/6/6;
+        background-color: green;
+      }
+      .c6 {
+        grid-column: 6/8;
+        background-color: rgb(30, 244, 59);
+      }
+      .c7 {
+        grid-column: 6/8;
+        background-color: rgb(253, 6, 183);
+      }
+      .c8 {
+        grid-column: 4/9;
+        background-color: rgb(205, 19, 19);
+      }
+      .c9 {
+        background-color: darkmagenta;
+      }
+      .c10 {
+        grid-column: 1/10;
+        background-color: rgb(214, 214, 14);
+      }
+      .con div:hover {
+        box-shadow: 5px 5px 10px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="c1">1</div>
+      <div class="c2">2</div>
+      <div class="c3">3</div>
+      <div class="c4">4</div>
+      <div class="c5">5</div>
+      <div class="c6">6</div>
+      <div class="c7">7</div>
+      <div class="c8">8</div>
+      <div class="c9">9</div>
+      <div class="c10">10</div>
+    </div>
+  </body>
+</html>

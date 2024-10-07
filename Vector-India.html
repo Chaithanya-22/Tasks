@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vector India</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .nav {
+        width: 100%;
+        height: 100px;
+        /* border: 2px solid red; */
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+      }
+      .nav-left {
+        padding-left: 40px;
+      }
+      .nav-right {
+        width: 40%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .nav-right a {
+        text-decoration: none;
+        color: rgb(240, 158, 8);
+        font-weight: 450;
+        font-size: 20px;
+      }
+      .con-1 {
+        width: 100%;
+        height: 730px;
+        background-image: url("https://images.unsplash.com/photo-1590579491624-f98f36d4c763?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .con-1 h1 {
+        font-size: 50px;
+        color: rgb(240, 101, 8);
+        margin: 0;
+      }
+      .con-1 a {
+        padding: 5px 20px;
+        text-decoration: none;
+        border: 2px solid;
+        border-radius: 10px;
+        color: black;
+      }
+      .con-1 p {
+        font-size: 20px;
+      }
+      .h-1 {
+        font-size: 50px;
+        text-align: center;
+        color: rgb(240, 101, 8);
+      }
+      .con-2 {
+        width: 80%;
+        margin: auto;
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.253);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+      .con-2 div {
+        width: 47%;
+        height: 250px;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .con-2 p {
+        margin: 0;
+        color: grey;
+        font-size: 17px;
+      }
+      .con-2 h1 {
+        margin: 0;
+        color: rgb(236, 86, 136);
+      }
+      .para-1 {
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      .para-2 {
+        width: 100%;
+        border-top: 1px solid black;
+        padding: 15px 50px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .para-2 a {
+        text-decoration: none;
+        padding: 10px 50px;
+        border: 2px solid rgb(236, 86, 136);
+        border-radius: 50px;
+        color: rgb(236, 86, 136);
+        font-size: 18px;
+      }
+
+      .con-4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .con-4 div {
+        width: 40%;
+        padding: 30px;
+        background-color: rgb(204, 207, 206);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .con-4 p {
+        text-align: center;
+        margin: 5px;
+      }
+      .para-3 {
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+      }
+      .name {
+        font-weight: bolder;
+        font-size: 20px;
+        color: rgb(240, 101, 8);
+      }
+      .con-4 img {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+      }
+
+      .con-3 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin-top: 50px;
+        padding: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      .con-3-1 {
+        width: 20%;
+        height: 250px;
+        color: rgb(167, 166, 166);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+      }
+      .con-3-h {
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border-bottom: 2px solid rgb(240, 101, 8);
+      }
+      .con-3-p {
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: 25px;
+        box-sizing: border-box;
+      }
+      .con-3-p i {
+        color: rgb(240, 101, 8);
+      }
+      .con-3-2 {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .con-3-2 a {
+        color: rgb(167, 166, 166);
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s linear;
+      }
+      .con-3-2 a:hover {
+        transform: translateX(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-left">
+        <img
+          src="https://www.vectorindia.org/assets/images/resources/logo.png"
+          alt=""
+        />
+      </div>
+      <div class="nav-right">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Course</a>
+        <a href="">Register</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+    <div class="con-1">
+      <h1>Indias No1 Training Institute</h1>
+      <p>To become a Full-Stach Developer now you can join with us</p>
+      <a href="">Click me to join</a>
+    </div>
+    <h1 class="h-1">Courses</h1>
+    <div class="con-2">
+      <div class="con-2-1">
+        <span class="para-1">
+          <p>Programming</p>
+          <h1>Core Java</h1>
+        </span>
+        <span class="para-2">
+          <p>
+            <i class="fa-solid fa-less-than"></i>/<i
+              class="fa-solid fa-greater-than"
+            ></i>
+            Programs
+          </p>
+          <a href=""
+            ><i class="fa-solid fa-book-open"></i>&emsp;Start Learning</a
+          >
+        </span>
+      </div>
+      <div class="con-2-1">
+        <span class="para-1">
+          <p>Programming</p>
+          <h1>C Language</h1>
+        </span>
+        <span class="para-2">
+          <p>
+            <i class="fa-solid fa-less-than"></i>/<i
+              class="fa-solid fa-greater-than"
+            ></i>
+            Programs
+          </p>
+          <a href=""
+            ><i class="fa-solid fa-book-open"></i>&emsp;Start Learning</a
+          >
+        </span>
+      </div>
+      <div class="con-2-1">
+        <span class="para-1">
+          <p>Programming</p>
+          <h1>Data Structure</h1>
+        </span>
+        <span class="para-2">
+          <p>
+            <i class="fa-solid fa-less-than"></i>/<i
+              class="fa-solid fa-greater-than"
+            ></i>
+            Programs
+          </p>
+          <a href=""
+            ><i class="fa-solid fa-book-open"></i>&emsp;Start Learning</a
+          >
+        </span>
+      </div>
+      <div class="con-2-1">
+        <span class="para-1">
+          <p>Programming</p>
+          <h1>Tally</h1>
+        </span>
+        <span class="para-2">
+          <p>
+            <i class="fa-solid fa-less-than"></i>/<i
+              class="fa-solid fa-greater-than"
+            ></i>
+            Programs
+          </p>
+          <a href=""
+            ><i class="fa-solid fa-book-open"></i>&emsp;Start Learning</a
+          >
+        </span>
+      </div>
+      <div class="con-2-1">
+        <span class="para-1">
+          <p>Programming</p>
+          <h1>Android</h1>
+        </span>
+        <span class="para-2">
+          <p>
+            <i class="fa-solid fa-less-than"></i>/<i
+              class="fa-solid fa-greater-than"
+            ></i>
+            Programs
+          </p>
+          <a href=""
+            ><i class="fa-solid fa-book-open"></i>&emsp;Start Learning</a
+          >
+        </span>
+      </div>
+      <div class="con-2-1">
+        <span class="para-1">
+          <p>Programming</p>
+          <h1>HTML</h1>
+        </span>
+        <span class="para-2">
+          <p>
+            <i class="fa-solid fa-less-than"></i>/<i
+              class="fa-solid fa-greater-than"
+            ></i>
+            Programs
+          </p>
+          <a href=""
+            ><i class="fa-solid fa-book-open"></i>&emsp;Start Learning</a
+          >
+        </span>
+      </div>
+    </div>
+    <h1 class="h-1">Testimonial</h1>
+    <div class="con-4">
+      <div class="con-4-left">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5rPtRqUEG_1uGP3aDlG60E9bjB3gtuXzxVg&s"
+          alt="sunny"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio totam
+          fuga cupiditate ea quo a! Molestiae nostrum pariatur eos explicabo
+          vero ipsa assumenda eaque excepturi rem dolorem voluptates tempore
+          quisquam non architecto nemo.
+        </p>
+        <p class="name">Karenjit Kaur Vohra</p>
+        <p class="para-3">v24hfs2aa | google | 10lpa</p>
+      </div>
+      <div class="con-4-right">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/047/882/604/non_2x/elegant-versatile-trendy-diverse-sophisticated-expressive-creative-stylish-timeless-chic-vector.jpg"
+          alt="sunny"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio totam
+          fuga cupiditate ea quo a! Molestiae nostrum pariatur eos explicabo
+          vero ipsa assumenda eaque excepturi rem dolorem voluptates tempore
+          quisquam non architecto nemo.
+        </p>
+        <p class="name">Sunny Helen</p>
+        <p class="para-3">v24hfs2aa | amazon | 15lpa</p>
+      </div>
+    </div>
+
+    <div class="con-3">
+      <div class="con-3-1">
+        <div class="con-3-h">Hyderabad</div>
+        <div class="con-3-p">
+          #502, Nagasuri Plaza (Bank Of India building), Behind Maithrivanam,
+          Ameerpet, Hyderabad - 500038.
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-phone"></i>&emsp;+91 98666 66699
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-tty"></i>&emsp;040 23 73 6669
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-envelope"></i>&emsp;info@vectorindia.org
+        </div>
+      </div>
+      <div class="con-3-1">
+        <div class="con-3-h">Bangalore</div>
+        <div class="con-3-p">
+          33/49, 27th Cross, 12th Main, Jayanagar 4th block, Bangalore - 560011.
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-phone"></i>&emsp;+91 87624 56789
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-tty"></i>&emsp;080 26546474
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-envelope"></i>&emsp;info.blr@vectorindia.org
+        </div>
+      </div>
+      <div class="con-3-1">
+        <div class="con-3-h">Chennai</div>
+        <div class="con-3-p">
+          2nd floor, 179, 1st Main Road, Nehru Nagar, Lane Opp to Turyaa Hotel,
+          Perungudi, Chennai - 600096.
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-phone"></i>&emsp;+91 94442 22459
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-tty"></i>&emsp; 044 24543969
+        </div>
+        <div class="con-3-p">
+          <i class="fa-solid fa-envelope"></i>&emsp;info.chen@vectorindia.org
+        </div>
+      </div>
+      <div class="con-3-2">
+        <div class="con-3-h">Company</div>
+        <a href="">About Vector India</a>
+        <a href="">Careers</a>
+        <a href="">Testimonials</a>
+        <a href="">Gallery</a>
+        <a href="">FAQ's</a>
+        <a href="">Policies</a>
+        <a href="">Blog</a>
+        <a href="">Contact Us</a>
+        <a href="">Site Map</a>
+      </div>
+    </div>
+  </body>
+</html>

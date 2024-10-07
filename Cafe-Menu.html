@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .menu {
+        margin-top: 50px;
+        width: 400px;
+        height: 600px;
+        padding: 20px;
+        background-color: rgb(216, 181, 129);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .names {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* .menu-list1, */
+      .menu-list {
+        /* border: 2px solid red; */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .menu-list2 {
+        height: 80px;
+      }
+      .items,
+      .prices {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      h1,
+      h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .para {
+        font-style: italic;
+        font-weight: bold;
+      }
+      img {
+        width: 50px;
+      }
+      hr {
+        width: 100%;
+        border: 2px solid rgb(169, 28, 28);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <h1>Helen's Cafe</h1>
+      <p class="para">Est. 2020</p>
+      <hr />
+      <div class="names">
+        <h2>Coffee</h2>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="menu-list">
+        <div class="items">
+          <div>French Venila</div>
+          <div>Caramel Macchiato</div>
+          <div>Pumpkin Spice</div>
+          <div>Hazelnut</div>
+          <div>Mocha</div>
+        </div>
+        <div class="prices">
+          <div>3.00</div>
+          <div>3.75</div>
+          <div>3.50</div>
+          <div>4.00</div>
+          <div>4.50</div>
+        </div>
+      </div>
+      <div class="names">
+        <h2>Desserts</h2>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="menu-list">
+        <div class="items">
+          <div>Donut</div>
+          <div>Cherry Pie</div>
+          <div>Cheesecake</div>
+          <div>Cinnamon Roll</div>
+          <div>Chocolate brownie</div>
+        </div>
+        <div class="prices">
+          <div>1.50</div>
+          <div>2.75</div>
+          <div>3.00</div>
+          <div>2.50</div>
+          <div>5.55</div>
+        </div>
+      </div>
+      <hr />
+      <a href="">Visit our website</a>
+      <p>123 Free Code Camp Drive</p>
+    </div>
+  </body>
+</html>
